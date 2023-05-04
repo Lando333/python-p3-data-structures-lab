@@ -36,11 +36,7 @@ def print_spicy_foods(spicy_foods):
 def get_spicy_food_by_cuisine(spicy_foods, cuisine):
     for food in spicy_foods:
         if cuisine == food['cuisine']:
-            cuisine_dict = {}
-            cuisine_dict['name'] = food['name']
-            cuisine_dict['cuisine'] = food['cuisine']
-            cuisine_dict['heat_level'] = food['heat_level']
-            return cuisine_dict
+            return food
 
 def print_spiciest_foods(spicy_foods):
     spiciest = get_spiciest_foods(spicy_foods)
